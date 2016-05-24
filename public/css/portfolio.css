@@ -1,3 +1,7 @@
+body {
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
 .center {
 	font-weight: 900;
 	font-size: 2.5em;
@@ -5,9 +9,14 @@
 }
 
 #name {
-	font-size: 2.5em;
+	margin-top:2em;
+	padding-top: 2em;
+	font-size: 2em;
 	font-weight: 700;
 	text-align: center;
+	color: #fff;
+	background-color: #3b7875;
+	height: 6em;
 }
 
 
@@ -18,8 +27,23 @@ h2 {
 }
 
 footer {
+	/*display: block;*/
 	margin-top: 2em;
+	margin-bottom: 2em;
 	text-align: center;
+	background-color: #3b7875;
+	color: #fff;
+	height: 10em;
+	font-size: 1.3em;
+	padding-top: 3em;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #000;
 }
 
 
