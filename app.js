@@ -1,28 +1,15 @@
 'use strict';
 var express = require('express');
 var path = require('path');
-var bodyParser = require('body-parser');
-var passport = require('passport');
-var session = require('express-session');
-var mongoose = require('mongoose');
-
-var index = require('./routes/index');
-var auth = require('./routes/auth');
-
+var favicon = require('serve-favicon');
 var app = express();
-// var db = mongoose.connect('mongodb://piet:snot@ds047722.mlab.com:47722/pic-wall')
-
-app.use(bodyParser.urlencoded({extended:true}));
-
-
-require('./config/passport')(app);
+app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+var index = require('./routes/index');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/auth', auth);
 
 
 app.use(function(req, res, next) {
@@ -53,8 +40,9 @@ app.use(function(err, req, res, next) {
 	});
 });
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8000);
 
 var server = app.listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
+
