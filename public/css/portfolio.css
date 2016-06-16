@@ -19,31 +19,35 @@ body {
 	height: 6em;
 }
 
-
-h2 {
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-left: 0.3em;
-}
-
-footer {
-	/*display: block;*/
-	margin-top: 2em;
-	margin-bottom: 2em;
-	text-align: center;
-	background-color: #3b7875;
-	color: #fff;
-	height: 10em;
-	font-size: 1.3em;
-	padding-top: 3em;
-}
-
 a {
-	color: #fff;
+	color: #000;
+	display: block;
+	margin-bottom: 1em;
+	font-size: 1.8em;
 }
 
 a:hover {
 	color: #000;
+}
+
+
+
+.app {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+footer {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+	background-color: #3b7875;
+	height: 10em;
+	padding-top: 2em;	
+}
+
+footer a {
+	color: white;
 }
 
 
