@@ -5,10 +5,14 @@ body {
 .center {
 	font-weight: 900;
 	font-size: 2.5em;
+}
+
+h2, p.center {
 	text-align: center;
 }
 
-#name {
+
+h1 {
 	margin-top:2em;
 	padding-top: 2em;
 	font-size: 2em;
@@ -23,7 +27,7 @@ a {
 	color: #000;
 	display: block;
 	margin-bottom: 1em;
-	font-size: 1.8em;
+	font-size: 2em;
 }
 
 a:hover {
@@ -37,17 +41,20 @@ a:hover {
 	text-align: center;
 }
 
-footer {
+.contact-details {
 	margin-top: 2em;
 	margin-bottom: 2em;
 	text-align: center;
 	background-color: #3b7875;
-	height: 10em;
+	height: auto;
 	padding-top: 2em;	
+	padding-bottom: 2em;	
+	font-size: 0.7em;
 }
 
-footer a {
+.contact-details a {
 	color: white;
+
 }
 
 
