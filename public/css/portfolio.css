@@ -34,6 +34,10 @@ a:hover {
 	color: #000;
 }
 
+a.appname {
+	border-bottom: 3px solid #b4e7f8;
+}
+
 
 
 .app {
